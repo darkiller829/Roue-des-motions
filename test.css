@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", "sans-serif";
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  /* Base gradient with dark purple-gray */
+  background: radial-gradient(
+    ellipse at center,
+    rgba(75, 75, 95, 0.8) 0%,
+    rgba(45, 45, 60, 0.95) 70%,
+    rgba(40, 40, 55, 1) 100%
+  );
+
+  /* Multiple layered gradients for enhanced colors */
+  background-image: 
+            /* Enhanced orange tint on left - more vibrant */ radial-gradient(
+      circle at 15% 30%,
+      rgba(255, 145, 80, 0.25) 0%,
+      rgba(255, 160, 100, 0.15) 20%,
+      transparent 50%
+    ),
+    /* Additional warm glow to enhance orange */
+      radial-gradient(
+        circle at 10% 40%,
+        rgba(255, 170, 120, 0.2) 0%,
+        rgba(255, 170, 120, 0.05) 30%,
+        transparent 60%
+      ),
+    /* Blue tint on right */
+      radial-gradient(
+        circle at 85% 60%,
+        rgba(100, 150, 255, 0.12) 0%,
+        rgba(100, 150, 255, 0.04) 25%,
+        transparent 50%
+      ),
+    /* Enhanced central diffused light/white glow - more pronounced */
+      radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0.28) 0%,
+        rgba(255, 255, 255, 0.15) 15%,
+        rgba(255, 255, 255, 0.05) 30%,
+        transparent 50%
+      ),
+    /* Additional subtle white highlight for more dimension */
+      radial-gradient(
+        circle at 45% 45%,
+        rgba(255, 255, 255, 0.12) 0%,
+        transparent 30%
+      ),
+    /* Base gradient */
+      radial-gradient(
+        ellipse at center,
+        rgba(75, 75, 95, 0.8) 0%,
+        rgba(45, 45, 60, 0.95) 70%,
+        rgba(40, 40, 55, 1) 100%
+      );
+
+  /* Apply blur effect to simulate overall blurriness */
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
+  /* Basic reset and full height */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Ensure full page coverage */
+html {
+  height: 100%;
+  background-color: #3a3a50;
+}
+
+ul li {
+  list-style: none;
+  padding: 15px;
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400px;
+  font-size: 1rem;
+}
+
+header {
+  margin: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/* c
+    background-color: rgba(126, 101, 91, 0.3);
+    h
+    background-color: rgba(175, 114, 89, 0.3); */
+
+.navbar {
+  width: 100%;
+  max-width: 1200px; /* More reasonable maximum width */
+  margin: 0 auto; /* Center the navbar */
+}
+
+/* More specific styling for the navbar elements */
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Add some padding on the sides */
+}
+.opinion {
+  width: 80%;
+  height: 46rem;
+  background-color: #d8c4a4;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.a-1 {
+  padding: 10px;
+}
+h1 {
+  margin: 10px;
+  text-align: center;
+}
