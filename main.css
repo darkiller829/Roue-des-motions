@@ -149,6 +149,7 @@ header {
   width: 100%;
   max-width: 1200px; /* More reasonable maximum width */
   margin: 0 auto; /* Center the navbar */
+  z-index: 1000;
 }
 
 /* More specific styling for the navbar elements */
@@ -182,7 +183,7 @@ header {
 }
 
 .item-box {
-  background-color: #f0f0f0; /* Couleur de fond */
+  background-color: #a8977f;
   border: 1px solid #ccc; /* Bordure */
   border-radius: 8px; /* Coins arrondis */
   padding: 15px; /* Espacement interne */
@@ -190,6 +191,7 @@ header {
   flex: 1 1 calc(30% - 20px); /* Flexibilité pour s'adapter */
   box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur */
   min-width: 250px; /* Largeur minimale */
+  color: #fff;
 }
 
 /* Styles supplémentaires pour rendre le bouton plus joli */
